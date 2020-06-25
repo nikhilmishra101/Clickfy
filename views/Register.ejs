@@ -1,0 +1,50 @@
+<%- include('partials/header'); -%>
+<div class="all" style="background-image: url('images/4.jpg');">
+  <h1 class="Heading">Compose</h1>
+  <form action="/submission" method="POST">
+    <label class="Heading">Email id</label><br />
+    <input type="email" name="postTitle" class="form-control" /><br />
+    <label class="Heading">Theme of Click's</label><br />
+    <textarea type="text" name="postTitle" class="form-control"></textarea
+    ><br />
+
+    <div class="input-group mb-3">
+      <div class="custom-file">
+        <label class="custom-file-label" for="inputGroupFile02"
+          >Choose image 1</label
+        >
+        <input
+          type="file"
+          class="custom-file-input choose"
+          id="inputGroupFile02"
+        />
+
+        <label class="custom-file-label" for="inputGroupFile02"
+          >Choose image 2</label
+        >
+        <input
+          type="file"
+          class="custom-file-input choose"
+          id="inputGroupFile02"
+        />
+
+        <label class="custom-file-label" for="inputGroupFile02"
+          >Choose image 3</label
+        >
+        <input
+          type="file"
+          class="custom-file-input choose"
+          id="inputGroupFile02"
+        />
+      </div>
+      <div class="input-group-append">
+        <span class="input-group-text" id="clicks">Upload</span>
+      </div>
+    </div>
+    <br />
+    <button type="submit" name="button" class="btn btn-lg btn-primary">
+      Register
+    </button>
+  </form>
+</div>
+<%- include('partials/footer'); -%>
